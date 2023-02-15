@@ -1,0 +1,84 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 9;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    width: 90%;
+    overflow-y: auto;
+    max-height: 80%;
+    z-index: 9;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+}
+
+.btn__success {
+    background-color: #22979c;
+    border: 1px solid #22979c;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.btn__default {
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    color: #454545;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.modal__header {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.modal__summary{
+    font-size: 0.8rem;
+    color: #454545b3;
+}

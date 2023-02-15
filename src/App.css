@@ -1,0 +1,324 @@
+*,html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  margin: 0;
+}
+
+.border{
+  border: 1px solid red;
+}
+
+button{cursor: pointer;}
+
+body{
+  /* position: relative;
+  max-width: 375px;
+  margin: 0 auto;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden; */
+}
+
+.lyt__container{
+  width: 100%;
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+.max__width{
+  max-width: 352px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper__layout {
+  position: relative;
+  max-width: 375px;
+  margin: 0 auto;
+  /* border-left: 1px solid #dddddd; */
+  /* border-right: 1px solid #dddddd; */
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2.125rem;
+  margin-bottom: 2rem;
+  /* padding: 20px 0; */
+  /* background-color: #eeeeee; */
+}
+
+.verify__text {
+  font-size: 0.9rem;
+  /* max-width: 210px; */
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.form__input{
+  margin-bottom: 1rem;
+}
+
+input, input:focus, input:focus-visible{
+  padding: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 0.3rem;
+  outline: none;
+  font-size: 1rem;
+  height: 3.3rem !important;
+}
+
+input{
+  width: 100%;
+}
+
+input::placeholder{
+  color: #aaaaaa;
+}
+
+input[type='radio']{
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgb(237 239 242);
+  border-color: rgb(237 239 242);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 0.5rem;
+  height: 26px !important;
+  width: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='radio']:after{
+  content: '\2713';
+  color:#22979c;
+  visibility: hidden;
+  font-weight: 600;
+}
+input[type='radio']:hover{
+  background-color: #dddddd;
+}
+input[type='radio']:checked{
+  background-color: #eeeeee;
+}
+input[type='radio']:checked:after{
+  content: '\2713';
+  visibility: visible;
+}
+
+.dis__container{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.dis__flex{
+  display: flex;
+}
+.j__c__c{
+  justify-content: center;
+}
+.j__c__sb{
+  justify-content: space-between;
+}
+.a__i__c{
+  align-items: center;
+}
+
+.dis__container__sm{
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.dis__flex__sm{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.flex__auto__sm{
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.flex__col__sm{
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.input__country__code{
+  width: 6rem;
+  height: 3.3rem;
+  background: rgb(237 239 242);
+  border-color: rgb(237 239 242);
+}
+.input__phone{
+  width: 100%;
+  height: 3.3rem;
+  background: rgb(237 239 242);
+  border-color: rgb(237 239 242);
+}
+.read__agreement{
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+.read__agreement > a{
+  color: #22979c;
+}
+
+.btn__success__register{
+  background-color: #22979c;
+  border: 1px solid #22979c;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+}
+
+.btn__next{
+  background-color: #22979c;
+  border: 1px solid #22979c;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1rem;
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1; */
+}
+.btn__cancel{
+  background-color: #d5d5d5;
+  border: 1px solid #d5d5d5;
+  color: #454545;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1rem;
+  /* position: absolute;
+  left: 0;
+  bottom: 49px;
+  z-index: 1; */
+}
+
+.btn__login{
+  color: #22979c;
+  border: 1px solid #22979c;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  margin: auto;
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  height: 3rem;
+}
+
+.btn__primary{
+  color: #22979c;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+}
+
+.desc__text{
+  font-size: 0.8rem;
+  max-width: 250px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #454545b3;
+}
+
+.mobile__sms{
+  color: #000000;
+  font-weight: 500;
+}
+
+.mr__b__sm{
+  margin-bottom: 1rem;
+}
+.mr__t__sm{
+  margin-top: 1rem;
+}
+.mr__b__md{
+  margin-bottom: 2rem;
+}
+.mr__b__lg{
+  margin-bottom: 3rem;
+}
+.mr__b__xl{
+  margin-bottom: 4rem;
+}
+.mr__t__md{
+  margin-top: 2rem;
+}
+
+/* .MuiTabs-root, .MuiTabs-flexContainer, .MuiTabs-centered, 	.MuiTabs-scroller, .MuiBox-root{
+  height: 2rem;
+  min-height: auto;
+}
+.MuiTabs-root button{
+  color: rgb(117, 128, 138);
+  text-transform: capitalize;
+  padding: 0;
+  min-height: auto;
+  flex: 1;
+}
+.MuiTabs-indicator{
+  background-color: transparent !important;
+  border-radius: 0.3rem;
+}
+.Mui-selected{
+  color: #000000 !important;
+  background: #ffffff !important;
+  margin: 0.2rem !important;
+} */
+
+.react-tel-input .form-control{
+  width: 100% !important;
+  height: 3.3rem !important;
+  font-size: 1rem !important;
+}
+.react-tel-input .flag-dropdown {
+  border-right: none !important;
+  background-color: #ffffff !important;
+}
