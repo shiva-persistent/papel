@@ -18,7 +18,7 @@ h6, p {
   border: 1px solid red;
 }
 
-button{cursor: pointer;}
+button, img{cursor: pointer;}
 
 body{
   /* position: relative;
@@ -60,6 +60,12 @@ body{
   margin-bottom: 2rem;
   /* padding: 20px 0; */
   /* background-color: #eeeeee; */
+}
+
+.sub__header__title{
+  text-align: center;
+  font-size: 1rem;
+  color: #454545a1;
 }
 
 .verify__text {
@@ -134,6 +140,13 @@ input[type='radio']:checked:after{
 .dis__flex{
   display: flex;
 }
+
+.dis__flex__gutters{
+  display: flex;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
 .j__c__c{
   justify-content: center;
 }
@@ -166,6 +179,15 @@ input[type='radio']:checked:after{
   padding-left: 0.5rem;
 }
 
+.flex__auto{
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 .flex__col__sm{
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -174,6 +196,20 @@ input[type='radio']:checked:after{
   max-width: 100%;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+}
+
+.flex__col{
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.text__center{
+  text-align: center;
 }
 
 .input__country__code{
@@ -321,4 +357,34 @@ input[type='radio']:checked:after{
 .react-tel-input .flag-dropdown {
   border-right: none !important;
   background-color: #ffffff !important;
+}
+
+.campaigns{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #ffffff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  background: transparent;
+}
+
+.quick__trans figcaption{
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn__slider{
+  background-color: #22979c;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  margin: 0 0.2rem;
 }
